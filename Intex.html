@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Little Surprise</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+}
+
+.emoji {
+  font-size: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <div class="emoji">😂🎉❤️</div>
+  <h1>Hey! I have a surprise for you!</h1>
+  <p>Click the button below 👇</p>
+  <button onclick="showThanks()">Click Me!</button>
+  <h2 id="message"></h2>
+</div>
+
+<script>
+function showThanks() {
+  document.getElementById("message").innerHTML =
+  "THANK YOU ❤️🎉";
+}
+</script>
+
+</body>
+</html>
